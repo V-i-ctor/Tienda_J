@@ -60,6 +60,6 @@ public class CategoriaController {
     public String categoriaModificar(Categoria categoria, Model model) {
         categoria = categoriaService.getCategoria(categoria);
         model.addAttribute("categoria", categoria);
-        return "/categoria/modifica";
+        return "categoria/modifica";
     }
 }
